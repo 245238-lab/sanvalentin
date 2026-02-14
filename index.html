@@ -1,160 +1,148 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Nuestro Universo</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nuestro Universo</title>
 
-<style>
-body {
-    margin: 0;
-    padding: 0;
-    background: black;
-    color: white;
-    font-family: 'Arial', sans-serif;
-    text-align: center;
-    overflow: hidden;
-}
+  <!-- Fuentes románticas -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&family=Great+Vibes&display=swap" rel="stylesheet">
 
-.stars {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    background: url('https://i.imgur.com/9QZ7GQF.png');
-    animation: moveStars 100s linear infinite;
-    z-index: -1;
-}
+  <style>
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: linear-gradient(135deg, #0b0b0f, #1a1a2e, #2b1055);
+      color: #ffffff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 20px;
+    }
 
-@keyframes moveStars {
-    from {background-position: 0 0;}
-    to {background-position: -10000px 5000px;}
-}
+    .container {
+      max-width: 820px;
+      line-height: 1.9;
+    }
 
-.container {
-    margin-top: 20vh;
-    padding: 20px;
-}
+    h1 {
+      font-family: 'Great Vibes', cursive;
+      font-size: 3.2em;
+      color: #ff4d6d;
+      margin-bottom: 30px;
+    }
 
-h1 {
-    font-size: 2.5em;
-    animation: glow 2s ease-in-out infinite alternate;
-}
+    p {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.15em;
+      margin: 22px 0;
+    }
 
-@keyframes glow {
-    from { text-shadow: 0 0 10px #ff4da6; }
-    to { text-shadow: 0 0 20px #ff99cc; }
-}
+    .destacado {
+      font-style: italic;
+      color: #ffd6e0;
+    }
 
-button {
-    padding: 15px 30px;
-    font-size: 1.2em;
-    background: #ff4da6;
-    border: none;
-    border-radius: 30px;
-    color: white;
-    cursor: pointer;
-    margin-top: 20px;
-    transition: 0.3s;
-}
+    .pregunta {
+      margin-top: 50px;
+      font-family: 'Great Vibes', cursive;
+      font-size: 2.6em;
+      color: #ffb3c6;
+    }
 
-button:hover {
-    background: #ff1a8c;
-}
+    .boton {
+      display: inline-block;
+      margin-top: 25px;
+      padding: 14px 28px;
+      background-color: #ff4d6d;
+      color: white;
+      text-decoration: none;
+      border-radius: 30px;
+      font-family: 'Playfair Display', serif;
+      font-size: 1em;
+      transition: transform 0.2s ease, background-color 0.2s ease;
+    }
 
-.hidden {
-    display: none;
-}
+    .boton:hover {
+      background-color: #ff6f8f;
+      transform: scale(1.05);
+    }
 
-.poema {
-    margin-top: 30px;
-    font-size: 1.1em;
-    line-height: 1.6em;
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
-}
+    .firma {
+      margin-top: 50px;
+      font-family: 'Great Vibes', cursive;
+      font-size: 2em;
+      color: #ffb3c6;
+    }
 
-#contador {
-    margin-top: 20px;
-    font-size: 1em;
-    color: #ffb3d9;
-}
-</style>
+    .fecha {
+      margin-top: 12px;
+      font-family: 'Playfair Display', serif;
+      font-size: 0.9em;
+      opacity: 0.8;
+    }
+  </style>
 </head>
 
 <body>
+  <div class="container">
+    <h1>Nuestro Universo</h1>
 
-<div class="stars"></div>
+    <p>Valentina,</p>
 
-<div class="container">
-    <h1>Valentina & Melchor ✨</h1>
-    
-    <button onclick="iniciar()">💖 Presiona para comenzar nuestro universo</button>
-    
-    <div id="contenido" class="hidden">
-        <div class="poema">
-            <p>
-            Valentina…<br><br>
-            Sé que ya eres mi pareja,<br>
-            pero quiero que cada día sea distinto,<br>
-            que cada momento contigo<br>
-            se sienta como la primera vez.<br><br>
+    <p>
+      Sé que ya somos pareja,  
+      pero quiero que nunca dejemos de elegirnos,  
+      que cada día juntos sea una decisión,  
+      no una costumbre.
+    </p>
 
-            Desde aquel 10 de agosto de 2023,<br>
-            mi mundo cambió de forma silenciosa,<br>
-            porque no solo llegaste tú…<br>
-            llegó mi calma,<br>
-            mi alegría inesperada,<br>
-            y el amor que quiero cuidar siempre.<br><br>
+    <p>
+      Desde el <span class="destacado">10 de agosto de 2023</span>,  
+      entendí que el amor no siempre llega haciendo ruido,  
+      a veces llega suave…  
+      y se queda.
+    </p>
 
-            No te amo solo por lo que eres,<br>
-            te amo por cómo me haces sentir,<br>
-            por cómo me miras,<br>
-            por cómo pronuncias “Melchor”<br>
-            como si fuera algo solo tuyo.<br><br>
+    <p>
+      Hemos pasado momentos buenos,  
+      momentos difíciles,  
+      dudas, silencios y miedos,  
+      y aun así aquí estamos.
+    </p>
 
-            Y si el universo tuviera que repetirse mil veces,<br>
-            en cada una te elegiría.<br><br>
+    <p>
+      No porque sea fácil,  
+      sino porque queremos.  
+      Porque creemos.  
+      Porque elegimos seguir.
+    </p>
 
-            — Efraín 💫
-            </p>
-        </div>
+    <p>
+      Y aunque el mundo a veces se ponga en contra,  
+      aunque las adversidades intenten separarnos,  
+      yo te sigo mirando  
+      y sigo sabiendo que es contigo.
+    </p>
 
-        <div id="contador"></div>
-    </div>
-</div>
+    <p class="destacado">
+      Seguimos juntos porque queremos.  
+      Y porque va a ser.
+    </p>
 
-<audio id="musica" loop>
-    <source src="https://www.youtube.com/embed/AjGkbFqi67c?autoplay=1" type="audio/mp3">
-</audio>
+    <div class="pregunta">¿Quieres ser mi San Valentín? ❤️</div>
 
-<script>
-function iniciar() {
-    document.querySelector("button").style.display = "none";
-    document.getElementById("contenido").classList.remove("hidden");
+    <a
+      class="boton"
+      href="https://www.youtube.com/results?search_query=Lo+que+siento+Cuco"
+      target="_blank"
+    >
+      Sí, quiero 💘 (escucha esta canción)
+    </a>
 
-    // Abrir música en nueva pestaña para asegurar reproducción
-    window.open("https://youtu.be/AjGkbFqi67c?si=1r7WI-yIelTVu4-y", "_blank");
-
-    iniciarContador();
-}
-
-function iniciarContador() {
-    const fechaInicio = new Date("2023-08-10");
-
-    setInterval(() => {
-        const ahora = new Date();
-        const diferencia = ahora - fechaInicio;
-
-        const dias = Math.floor(diferencia / (1000 * 60 * 60 * 24));
-        const horas = Math.floor((diferencia / (1000 * 60 * 60)) % 24);
-        const minutos = Math.floor((diferencia / (1000 * 60)) % 60);
-
-        document.getElementById("contador").innerHTML =
-            `Llevamos ${dias} días, ${horas} horas y ${minutos} minutos construyendo nuestro universo 💖`;
-    }, 1000);
-}
-</script>
-
+    <div class="firma">— Tu pareja</div>
+    <div class="fecha">Desde el 10 de agosto de 2023</div>
+  </div>
 </body>
-  </html>
+</html>
